@@ -4,13 +4,12 @@
 # For copyright and disclaimer se below.
 #
 # ABSTRACT: Check missing version in ChangeLog
+# PODNAME: Dist::Zilla::Plugin::CheckEmacsChangeLog
 #-----------------------------------------------------------------
 use strict;
 use warnings;
 package Dist::Zilla::Plugin::CheckEmacsChangeLog;
-{
-  $Dist::Zilla::Plugin::CheckEmacsChangeLog::VERSION = '0.0.1';
-}
+our $VERSION = '0.0.2'; # VERSION
 
 use Moose;
 extends 'Dist::Zilla::Plugin::CheckChangeLog';
@@ -58,7 +57,7 @@ Dist::Zilla::Plugin::CheckEmacsChangeLog - Check missing version in ChangeLog
 
 =head1 VERSION
 
-version 0.0.1
+version 0.0.2
 
 =head1 SYNOPSIS
 
@@ -99,7 +98,7 @@ Martin Senger <martin.senger@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Martin Senger, CBRC-KAUST (Computational Biology Research Center; King Abdullah University of Science and Technology) All Rights Reserved..
+This software is copyright (c) 2013 by Martin Senger, CBRC-KAUST (Computational Biology Research Center; King Abdullah University of Science and Technology) All Rights Reserved..
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
